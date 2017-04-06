@@ -91,6 +91,7 @@ export default class AtoZList extends Component {
             numToRenderAhead={40}
             numToRenderBehind={4}
             onEndReached={this.props.onEndReached}
+            {...this.props}
           />
         </View>
 
@@ -123,4 +124,3 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 });
-
